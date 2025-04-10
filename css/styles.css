@@ -14,6 +14,7 @@ body {
 
 img {
     display: block;
+   
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -362,6 +363,7 @@ border: 1px solid rgba(142, 143, 153, 1)
 .team-list .icon-container .icon {
   width: 16px;
    height: 16px;
+   fill: #f4f4fd;
        }
 
 
@@ -371,32 +373,35 @@ border: 1px solid rgba(142, 143, 153, 1)
     gap: 24px;
     justify-content: center;
     align-items: center;
-  
-              }
+                }
 
 
 
 .team-list .icon-container .icon-list>a{
   width: 40px;
         height: 40px;
-        background-color: #4d5ae5;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       
 
 }
 
 
 
+.icon-list{
+    background-color:#4d5ae5;
+    border-radius: 50%;
+transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 
 
 
-
-.team-list .icon-container .icon-list :hover {
+.icon-list:hover {
         background-color: #404bbf;
 }
 
@@ -587,6 +592,7 @@ transition-property: box-shadow;
 .page-finish .icon-container .icon {
     width: 24px;
     height: 24px;
+    fill: #f4f4fd;
 }
 
 .icon-list-container {
@@ -685,16 +691,27 @@ font-size: 12px;
 /* MODAL ALANI */
 
 
+.backdrop {
+    position: fixed;
+    visibility: hidden;
+   }
+
+.backdrop-is-open {
+    visibility: visible;
+        }
+
+
 .modal{
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 998;
     margin: 0 auto;
     inset: 0;
+    z-index: 998;
     background-color: rgba(46, 47, 66, 0.4);
-}
+    }
+
 
 
 .modal-content{
@@ -803,12 +820,12 @@ font-size: 12px;
 }
 
 
-.modal-form-input:focus  {
+.modal-form-input:focus-within  {
     border-color: #4d5ae5;
     }
 
 
-.modal-form-input:focus+.modal-form-icon{
+.modal-form-input:focus-within+.modal-form-icon{
     fill: #4d5ae5; }
 
 
