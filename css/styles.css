@@ -5,16 +5,12 @@ body {
 
 ::after,
 ::before {
-    box-sizing: border-box;
-   
-    
-
+    box-sizing: border-box; 
 }
 
 
 img {
     display: block;
-   
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +40,6 @@ ul {
 
 .container {
     margin: 0 auto;
-    width: 1158px;
     }
 
 
@@ -64,9 +59,7 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e7e9fc;
-  
-
-  
+  height: 56px;
 }
 
 
@@ -75,14 +68,13 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 117%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    
-    
-}
-
+    padding-left: 16px;
+ }
+ 
 .logo-studio {
     color: #2e2f42;
 }
@@ -98,8 +90,9 @@ visibility: hidden;
 
 
 .head-menu{
-    display: flex;
+    display: none;
     gap: 40px;
+    
            }
 
 .head-menu-list>a {
@@ -153,8 +146,7 @@ content: '';
 
 .head-contact {
     font-style: normal;
-   
-   
+   visibility: hidden; 
     display: flex;
     justify-content: flex-end;
     gap: 40px;
@@ -181,34 +173,44 @@ content: '';
 }
 
 
+/*navbar menü */
+
+
+
+
+
+
 
 /* Header Bitti */
 
 
 /* Slider Area*/
 .slider-area {
-    max-width: 1440px;
+    max-width: 100%;
+    height: 432px;
     margin: 0 auto;
     background: #202020;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+   background-size: cover;
     background-clip: padding-box;
+    justify-content: center;
     text-align: center;
-    padding: 188px 0;
-   
-    
-}
+    }
 
 .slider-text {
+    padding-top: 72px;
     font-family: "Roboto", sans-serif; 
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
     color: white;
-}
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
 
 .slider-button {
     color: white;
@@ -239,30 +241,34 @@ content: '';
 
 
 .first-paragraph .container {
-    padding-top: 120px;
+    padding-top: 96px;
     padding-bottom: 120px;
+    margin: 0 auto;
     }
 
 
 .first-paragraph-list {
     list-style: none;
 display: flex;
+flex-wrap: wrap;
+flex: 1 calc(100%);
     justify-content: center;
-    gap: 24px;
+    gap: 72px;
     
    
     }
 
 .first-h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.20;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
    }
 
 .first-paragraph-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.02em;
@@ -274,12 +280,11 @@ display: flex;
 .first-paragraph-list .icon-container .icon {
 width: 64px;
 height: 64px;
-
 }
 
 
 .first-paragraph-list .icon-container{
-display: flex;
+display: none;
 justify-content: center;
 align-items: center;
 margin: 0;
@@ -287,7 +292,7 @@ margin-bottom: 8px;
 height: 112px;
 background-color: #f4f4fd;
 border-radius: 4px;
-border: 1px solid rgba(142, 143, 153, 1)
+border: 1px solid rgba(142, 143, 153, 1);
 }
 
 
@@ -324,8 +329,9 @@ border: 1px solid rgba(142, 143, 153, 1)
 .team-area-list {
     list-style-type: none;
     display: flex;
-       justify-content: space-between;
-       gap: 24px; ;
+    flex-wrap: wrap;
+       justify-content: center;
+       gap: 72px; ;
     line-height: 1.5;
    
 }
@@ -420,8 +426,9 @@ transition-property: background-color;
 
 
 .portfolio-area .container {
-padding-top: 120px;
+padding-top: 96px;
 padding-bottom: 120px;
+max-width: 288px;
 }
 
     
@@ -439,12 +446,12 @@ padding-bottom: 120px;
 
 
 .portfolio-area-list{
+    
     list-style-type: none;
     display: flex;   
     flex-wrap: wrap;   
     justify-content: center;  
-    flex: 1 1 calc(33.333% - 10px);   
-    gap: 24px;
+    gap: 48px;
             
 }
 
@@ -480,7 +487,8 @@ padding-bottom: 120px;
 }
 
 .portfolio-list {
-    
+    padding-left: 16px;
+    padding-right: 16px;
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
 transition-property: box-shadow;
