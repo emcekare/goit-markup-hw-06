@@ -430,7 +430,10 @@ padding-top: 96px;
 padding-bottom: 96px;
 }
 
-    
+    .portfolio-list>img{
+        object-fit: cover;
+        width: 100%;     
+    }
    
 
 .portfolio-area .title {
