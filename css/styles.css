@@ -320,7 +320,7 @@ border: 1px solid rgba(142, 143, 153, 1);
         }
         
 .team-area .container {
-    padding: 120px 0;
+    padding: 96px 0;
     margin: 0 auto;
     
     
@@ -427,8 +427,7 @@ transition-property: background-color;
 
 .portfolio-area .container {
 padding-top: 96px;
-padding-bottom: 120px;
-max-width: 288px;
+padding-bottom: 96px;
 }
 
     
@@ -446,7 +445,6 @@ max-width: 288px;
 
 
 .portfolio-area-list{
-    
     list-style-type: none;
     display: flex;   
     flex-wrap: wrap;   
@@ -472,8 +470,7 @@ max-width: 288px;
 
 .portfolio-list-job {
     font-weight: 400;
-   
-        font-size: 16px;
+           font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
@@ -487,8 +484,7 @@ max-width: 288px;
 }
 
 .portfolio-list {
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 288px;
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
 transition-property: box-shadow;
