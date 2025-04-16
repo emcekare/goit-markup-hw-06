@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ritwickdey.liveserver",
+        "ecmel.vscode-html-css",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "kamikillerto.vscode-colorize",
+        "tombonnike.vscode-status-bar-format-toggle",
+        "nhoizey.gremlins",
+        "vincaslt.highlight-matching-tag"
+    ]
+}
