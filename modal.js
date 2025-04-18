@@ -21,9 +21,9 @@ const modalOpenButton = document.getElementById("modal-open-button");
 
 
 modalOpenButton.addEventListener("click", function () {
-  ModalMenu.classList.add("modal-menu-is-open");
+  ModalMenu.classList.add("backdrop-is-open");
 });
 
 modalCloseButton.addEventListener("click", function () {
-  ModalMenu.remove("modal-menu-is-open");
+  ModalMenu.remove("backdrop-is-open");
 });
