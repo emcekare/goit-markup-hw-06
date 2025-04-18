@@ -91,9 +91,6 @@ ul {
 
 
 
-
-
-
 /* ----------------- Header ---------------*/
 
 .page-start {
@@ -134,8 +131,7 @@ ul {
 /* headerdaki menüyü sola kaydırmak için kullanıldı */
 
 .hidden-header-nav {
-visibility: hidden;
-}
+display: none;}
 
 /* headerdaki menüyü sola kaydırmak için kullanıldı */
 
@@ -195,10 +191,13 @@ content: '';
     
 }
 
+.head-address {
+    display: none;
+}
 
 .head-contact {
     font-style: normal;
-   visibility: hidden; 
+    display: none;
     display: flex;
     justify-content: flex-end;
     gap: 40px;
@@ -236,11 +235,8 @@ content: '';
 
 
 .burger-menu {
-    position: relative;   
-    right: 95px; 
     padding: 0;
     margin: 0 auto;
-    z-index: 5;
 }
 
 /* Header Bitti */
@@ -347,6 +343,7 @@ height: 64px;
 
 .first-paragraph-list .icon-container{
 display: none;
+width: 288px;
 justify-content: center;
 align-items: center;
 margin: 0;
@@ -787,12 +784,12 @@ font-size: 12px;
 
 .backdrop {
     position: fixed;
-    visibility: hidden;
+    display: none;
     max-width: 320px;
    }
 
 .backdrop-is-open {
-    visibility: visible;
+    display: block;
     max-width: 320px;
         }
 
