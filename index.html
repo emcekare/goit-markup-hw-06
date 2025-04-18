@@ -30,31 +30,55 @@
 
 <!----------------- MOBİL NAVBAR ALANI ----------------------------------->
 
+
+
+
+
+
 <div id="hamburger-menu" class="hamburger-menu">
-  <button id="hamburger-menu-close-button" type="button" class="hamburger-close-button" width="16" height="18">
-    <svg width="8" height="8" class="hamburger-icon">
-      <use href="./images/icons.svg#icon-cross"></use>
+
+  <button id="hamburger-menu-close-button" type="button" class="modal-close-btn">
+    <svg width="8" height="8" class="cross-button" >
+      <use  href="./images/icons.svg#icon-cross">
+      </use>
     </svg>
-  </button>
-<nav class="hamburger-menu-nav">
+      </button>
+
   <ul class="hamburger-menu-list">
-<li>
-  <a href="#">Studio</a>
-</li>
+    <li class="hamburger-menu-list-item"><a href="#ourteam">Studio</a></li>
+    <li class="hamburger-menu-list-item"><a href="#portfolio">Portfolio</a></li>
+    <li class="hamburger-menu-list-item"><a href="#">Contacts</a></li>
+  </ul>
 
-<li>
-  <a href="#">Portfolio</a>
-</li>
-
-<li>
-  <a href="#">Contacts</a>
-</li>
-
-</ul>
+  <div class="Hamburger-contacts">
+    <a href="tel:+110001111111" class="phone phone-link">+11 (000) 111-11-11</a>
+    <a href="mailto:info@devstudio.com" class="mail mail-link">info@devstudio.com</a>
+  </div>
 
 
+<div class="hamburger-social-media">
 
-</nav>
+<a href="#ourteam">
+<svg class="mobil-icon"><use href="./images/icons.svg#icon-instagram-2"></use></svg>
+</a>
+
+
+ <a href="#ourteam">
+<svg class="mobil-icon"><use href="./images/icons.svg#icon-twitter-1"></use></svg>
+</a>
+
+
+<a href="#ourteam">
+<svg class="mobil-icon"><use href="./images/icons.svg#icon-facebook-1"></use></svg>
+</a>
+
+
+<a href="#ourteam">
+<svg class="mobil-icon"><use href="./images/icons.svg#icon-linkedin-1"></use></svg>
+</a>
+
+
+</div>
 </div>
 
 <!----------------- MOBİL NAVBAR ALANI BİTTİ ----------------------------------->
@@ -102,7 +126,7 @@
 
 <div class="burger-menu">
   <button id="hamburger-menu-open-button" type="button" class="burger-button" width="16" height="18">
-    <svg width="24" height="24" class="burger-icon">
+    <svg width="18" height="16" class="burger-icon">
       <use href="./images/icons.svg#icon-hamburger"></use>
     </svg>
   </button>
@@ -360,7 +384,7 @@
               />
               <h3 class="team-list-name">Daniel Wilson</h3>
               <p class="team-list-job">UI Designer</p>
-              <ul class="icon-container">
+<ul class="icon-container">
   <li class="icon-list">
     <a href="#ourteam">
 <svg class="icon">
