@@ -30,7 +30,7 @@ a {
     text-decoration: none;
     margin: 0;
     padding: 0;
-    all:unset
+    all:unset;
 }
 
 
@@ -43,7 +43,7 @@ ul {
 
 .container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1158px;
     }
 
 
@@ -148,12 +148,10 @@ letter-spacing: 0.02em;
     padding-left: 16px;
     text-align: left;
     max-width: 288px;
-    
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 
 
@@ -416,7 +414,6 @@ content: '';
     list-style: none;
 display: flex;
 flex-wrap: wrap;
-flex: 1 calc(100%);
     justify-content: center;
     gap: 72px;
     
@@ -488,7 +485,6 @@ border: 1px solid rgba(142, 143, 153, 1);
 .team-area .container {
     padding: 96px 0;
     margin: 0 auto;
-    max-width: 320px;
     
     
    }
@@ -497,7 +493,7 @@ border: 1px solid rgba(142, 143, 153, 1);
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-       justify-content: center;
+           justify-content: center;
        gap: 72px; ;
     line-height: 1.5;
    
@@ -595,7 +591,7 @@ transition-property: background-color;
 .portfolio-area .container {
 padding-top: 96px;
 padding-bottom: 96px;
-max-width: 320px;
+
 }
 
     .portfolio-list>img{
@@ -617,9 +613,9 @@ max-width: 320px;
 
 .portfolio-area-list{
     list-style-type: none;
-    display: flex;   
-    flex-wrap: wrap;   
-    justify-content: center;  
+    display: flex;
+    flex-wrap: wrap;  
+        justify-content: center;  
     gap: 48px;
             
 }
