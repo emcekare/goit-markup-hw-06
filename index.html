@@ -21,8 +21,47 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+
+<script src="./modal.js"> defer</script>
+
   </head>
   <body>
+
+
+<!----------------- MOBİL NAVBAR ALANI ----------------------------------->
+
+<div id="hamburger-menu" class="hamburger-menu">
+  <button id="hamburger-menu-close-button" type="button" class="hamburger-close-button" width="16" height="18">
+    <svg width="8" height="8" class="hamburger-icon">
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+<nav class="hamburger-menu-nav">
+  <ul class="hamburger-menu-list">
+<li>
+  <a href="#">Studio</a>
+</li>
+
+<li>
+  <a href="#">Portfolio</a>
+</li>
+
+<li>
+  <a href="#">Contacts</a>
+</li>
+
+</ul>
+
+
+
+</nav>
+</div>
+
+<!----------------- MOBİL NAVBAR ALANI BİTTİ ----------------------------------->
+
+
+
+
     <!-- HEADER BURADA BAŞLIYOR!!-->
     <header class="page-start">
       <div class="container">
@@ -59,10 +98,10 @@
           </ul>
         </address>
 
-<!------------ NAVBAR MOBİL MENÜ ------------->
+<!------------ NAVBAR MOBİL MENÜ İCON ------------->
 
 <div class="burger-menu">
-  <button type="button" class="burger-button" width="16" height="18">
+  <button id="hamburger-menu-open-button" type="button" class="burger-button" width="16" height="18">
     <svg width="24" height="24" class="burger-icon">
       <use href="./images/icons.svg#icon-hamburger"></use>
     </svg>
@@ -71,7 +110,7 @@
 </div>
       </div>
 
-<!------------ NAVBAR MOBİL MENÜ ------------->
+<!------------ NAVBAR MOBİL MENÜ İCON   ------------->
 
     </header>
     <!-- HEADER BURADA BİTİYOR!!-->
@@ -165,6 +204,8 @@
             <li class="team-list">
               <img
                 width="264px"
+                srcset="./images/markguerrero-1x.jpg 1x,
+                        ./images/markguerrero.jpg 2x"
                 src="./images/markguerrero.jpg"
                 alt="Product Designer"
               />
@@ -216,6 +257,8 @@
             <li class="team-list">
               <img
                 width="264px"
+                srcset="./images/tomford-1x.jpg 1x,
+                        ./images/tomford.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="Frontend Developer"
               />
@@ -262,6 +305,8 @@
             <li class="team-list">
               <img
                 width="264px"
+                srcset="./images/camilegarcia-1x.jpg 1x,
+                        ./images/camilegarcia.jpg 2x"
                 src="./images/camilegarcia.jpg"
                 alt="Marketing"
               />
@@ -308,10 +353,12 @@
             <li class="team-list">
               <img
                 width="264px"
+                srcset="./images/danielwilson-1x.jpg 1x,
+                        ./images/danielwilson.jpg 2x"
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson - UI Designer"
               />
-              <h3 class="team-list-name">Waniel Wilson</h3>
+              <h3 class="team-list-name">Daniel Wilson</h3>
               <p class="team-list-job">UI Designer</p>
               <ul class="icon-container">
   <li class="icon-list">
@@ -368,7 +415,9 @@
             <li class="portfolio-list">
                <div class="hidden-image">
               <img
-                width="360px"
+                width="288px"
+                srcset="./images/bankingapp-1x.jpg 1x,
+                        ./images/bankingapp.jpg 2x"
                 src="./images/bankingapp.jpg"
                 alt="Banking App"
               />
@@ -392,7 +441,9 @@
             <li class="portfolio-list">
               <div class="hidden-image"> 
                            <img
-                width="360px"
+                width="288px"
+                srcset="./images/cashlesspayment-1x.jpg 1x,
+                        ./images/cashlesspayment.jpg 2x"
                 src="./images/cashlesspayment.jpg"
                 alt="Cashless Payment"
                               />
@@ -416,7 +467,9 @@
             <li class="portfolio-list">
               <div class="hidden-image">
               <img
-                width="360px"
+                width="288px"
+                srcset="./images/meditationapp-1x.jpg 1x,
+                        ./images/meditationapp.jpg 2x"
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
               />
@@ -441,7 +494,9 @@
             <li class="portfolio-list">
               <div class="hidden-image">
               <img
-                width="360px"
+                width="288px"
+                srcset="./images/taxiservice-1x.jpg 1x,
+                        ./images/taxiservice.jpg 2x"
                 src="./images/taxiservice.jpg"
                 alt="Taxi Service"
               />
@@ -466,7 +521,9 @@
             <li class="portfolio-list">
               <div class="hidden-image">
               <img
-                width="360px"
+                width="288px"
+                srcset="./images/screenillustrations-1x.jpg 1x,
+                        ./images/screenillustrations.jpg 2x"
                 src="./images/screenillustrations.jpg"
                 alt="Screen Illustrations"
               />
@@ -491,7 +548,9 @@
             <li class="portfolio-list">
               <div class="hidden-image">
               <img
-                width="360px"
+                width="288px"
+                srcset="./images/onlinecourses-1x.jpg 1x,
+                        ./images/onlinecourses.jpg 2x"
                 src="./images/onlinecourses.jpg"
                 alt="Online Courses"
               />
@@ -696,16 +755,14 @@ Subscribe <svg width="24" class="frame-icon">
 Send
 </button>
 </div>
-
-
-
 </form>
-
-
-
-</div>
-
 </div>
 </div>
+</div>
+
+
+
+
+
 </body>
 </html>

@@ -1,7 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-          }
+           }
+
+
 
 ::after,
 ::before {
@@ -44,6 +46,54 @@ ul {
     }
 
 
+
+
+/* ----------------- HAMBURGER MENU ----------------- */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+
+.hamburger-menu-is-open{
+    display: block;
+}
+
+
+
+.hamburger-menu-nav {
+    
+    padding: 72px 16px 16px 40px;
+    
+}
+
+.hamburger-menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------- Header ---------------*/
 
 .page-start {
@@ -54,6 +104,7 @@ ul {
 
 
 .page-start .container {
+    max-width: 320px;
     display: flex;
     justify-content: space-between;
   align-items: center; 
@@ -174,7 +225,7 @@ content: '';
 }
 
 
-/*navbar menü */
+/*navbar button */
 
 
 .burger-button{
@@ -189,16 +240,15 @@ content: '';
     right: 95px; 
     padding: 0;
     margin: 0 auto;
+    z-index: 5;
 }
-
-
 
 /* Header Bitti */
 
 
 /* Slider Area*/
 .slider-area {
-    max-width: 100%;
+width: 320px;
     height: 432px;
     margin: 0 auto;
     background: #202020;
@@ -334,6 +384,7 @@ border: 1px solid rgba(142, 143, 153, 1);
 .team-area .container {
     padding: 96px 0;
     margin: 0 auto;
+    max-width: 320px;
     
     
    }
@@ -440,6 +491,7 @@ transition-property: background-color;
 .portfolio-area .container {
 padding-top: 96px;
 padding-bottom: 96px;
+max-width: 320px;
 }
 
     .portfolio-list>img{
@@ -558,7 +610,9 @@ transition-property: box-shadow;
     padding-top: 96px;
     padding-bottom: 96px;
     background-color: #2e2f42; 
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -734,14 +788,17 @@ font-size: 12px;
 .backdrop {
     position: fixed;
     visibility: hidden;
+    max-width: 320px;
    }
 
 .backdrop-is-open {
     visibility: visible;
+    max-width: 320px;
         }
 
 
 .modal{
+    max-width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -758,8 +815,8 @@ font-size: 12px;
        margin: 0 auto;
        position: absolute;
        border-radius: 4px;
-        width: 408px;
-        height: 584px;
+        width: 288px;
+        height: 623px;
     padding: 16px 24px;
     background-color:#fcfcfc ;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
