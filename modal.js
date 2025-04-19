@@ -7,11 +7,11 @@ const hamburgerCloseButton = document.getElementById("hamburger-menu-close-butto
 
 
 hamburgerOpenButton.addEventListener("click", function () {
-  hamburgermenu.classList.add("hamburger-menu-is-open");
+  hamburgermenu.classList.add("-is-open");
 });
 
 hamburgerCloseButton.addEventListener("click", function () {
-  hamburgermenu.classList.remove("hamburger-menu-is-open");
+  hamburgermenu.classList.remove("-is-open");
 });
 
 // modal açmak için gerekli olan fonksiyon
@@ -25,5 +25,5 @@ modalOpenButton.addEventListener("click", function () {
 });
 
 modalCloseButton.addEventListener("click", function () {
-  ModalMenu.remove("backdrop-is-open");
+  ModalMenu.classList.remove("backdrop-is-open");
 });

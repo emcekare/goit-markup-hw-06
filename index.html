@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
 
 <script src="./modal.js" defer></script>
 
@@ -29,11 +30,6 @@
 
 
 <!----------------- MOBİL NAVBAR ALANI ----------------------------------->
-
-
-
-
-
 
 <div id="hamburger-menu" class="hamburger-menu">
 
@@ -45,14 +41,14 @@
       </button>
 
   <ul class="hamburger-menu-list">
-    <li class="hamburger-menu-list-item"><a href="#ourteam">Studio</a></li>
+    <li class="hamburger-menu-studio"><a href="#ourteam">Studio</a></li>
     <li class="hamburger-menu-list-item"><a href="#portfolio">Portfolio</a></li>
     <li class="hamburger-menu-list-item"><a href="#">Contacts</a></li>
   </ul>
 
   <div class="Hamburger-contacts">
-    <a href="tel:+110001111111" class="phone phone-link">+11 (000) 111-11-11</a>
-    <a href="mailto:info@devstudio.com" class="mail mail-link">info@devstudio.com</a>
+    <a href="tel:+110001111111" class="phone">+11 (000) 111-11-11</a>
+    <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
   </div>
 
 
@@ -62,21 +58,17 @@
 <svg class="mobil-icon"><use href="./images/icons.svg#icon-instagram-2"></use></svg>
 </a>
 
-
  <a href="#ourteam">
 <svg class="mobil-icon"><use href="./images/icons.svg#icon-twitter-1"></use></svg>
 </a>
-
 
 <a href="#ourteam">
 <svg class="mobil-icon"><use href="./images/icons.svg#icon-facebook-1"></use></svg>
 </a>
 
-
 <a href="#ourteam">
 <svg class="mobil-icon"><use href="./images/icons.svg#icon-linkedin-1"></use></svg>
 </a>
-
 
 </div>
 </div>
@@ -96,7 +88,7 @@
         <!-- NAV -->
         <nav class="header-nav">
           <ul class="head-menu">
-            <li class="head-menu-list"><a class="link" href="#ourteam">Studio</a></li>
+            <li class="head-menu-studio"><a href="#ourteam">Studio</a></li>
             <li class="head-menu-list"><a href="#portfolio">Portfolio</a></li>
             <li class="head-menu-list"><a href="#">Contacts</a></li>
           </ul>
@@ -155,13 +147,13 @@
         </div>
       </section>
 
-      <!-- Başlık Bitti-->
+<!------------------ Başlık Bitti --------------------------->
 
-      <!--  SECTION 1 -->
+<!---------------------------  SECTION 1 ------------------------------>
       <section class="first-paragraph">
                     <div class="container">
           <ul class="first-paragraph-list">
-                        <li>
+        <li class="first-paragraph-list-item">
               <div class="icon-container">
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -170,13 +162,11 @@
 
               <h3 class="first-h3">Strategy</h3>
               <p class="first-paragraph-text">
-                Our goal is to identify the business <br />
-                problem to walk away with the <br />perfect and creative
-                solution.
+                Our goal is to identify the business problem to walk away with the perfect and creative solution.
               </p>
             </li>
 
-            <li>
+            <li class="first-paragraph-list-item" >
              <div class="icon-container">
 <svg class="icon">
             <use href="./images/icons.svg#icon-clock-1"></use>
@@ -185,12 +175,11 @@
 
               <h3 class="first-h3">Punctuality</h3>
               <p class="first-paragraph-text">
-                Bring the key message to the <br />brand's audience for the best
-                price <br />within the shortest possible time.
+               Bring the key message to thebrand's audience for the best price within the shortest possible time.
               </p>
             </li>
 
-            <li>
+            <li class="first-paragraph-list-item">
               <div class="icon-container">
 <svg class="icon">
             <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -198,12 +187,11 @@
 </div>
               <h3 class="first-h3">Diligence</h3>
               <p class="first-paragraph-text">
-                Research and confirm brands with the <br />strongest digital
-                growth <br />opportunities and minimize risk.
+                Research and confirm brands with the strongest digital growthopportunities and minimize risk.
               </p>
             </li>
 
-            <li>
+            <li class="first-paragraph-list-item">
 <div class="icon-container">
    <svg class="icon">
             <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -211,16 +199,16 @@
        </div>
               <h3 class="first-h3">Technologies</h3>
               <p class="first-paragraph-text">
-                Design practice focused on digital <br />experiences. We bring
-                forth a deep <br />passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
               </p>
             </li>
           </ul>
         
       </section>
-      <!-- Section 1 bitti!! -->
+<!--------------------------------- Section 1 bitti!! ----------------------------->
 
-      <!-- SECTION 2 "OUR TEAM"-->
+
+<!-------------------------------- SECTION 2 "OUR TEAM"---------------------------->
       <section id="ourteam" class="team-area">
         <div class="container">
           <h2 class="title">Our Team</h2>
@@ -273,10 +261,6 @@
 </a>
 </li>
 </ul>
-
-
-
-
             </li>
             <li class="team-list">
               <img
@@ -425,9 +409,10 @@
           </ul>
         </div>
       </section>
-      <!-- Section 2 Bitti !-->
+<!---------------------- TEAM AREA ENDS ----------------------->
 
-      <!-- SECTION 3 "OUR PORTFOLİO" -->
+
+<!---------------------- SECTION 3 "OUR PORTFOLİO" ---------------->
       <section id="portfolio" class="portfolio-area">
         <div class="container">
           <h2 class="title">Our Portfolio</h2>
@@ -438,9 +423,7 @@
 
             <li class="portfolio-list">
                <div class="hidden-image">
-              <img
-                width="288px"
-                srcset="./images/bankingapp-1x.jpg 1x,
+              <img class="portfolio-img" srcset="./images/bankingapp-1x.jpg 1x,
                         ./images/bankingapp.jpg 2x"
                 src="./images/bankingapp.jpg"
                 alt="Banking App"
@@ -464,9 +447,7 @@
             </li>
             <li class="portfolio-list">
               <div class="hidden-image"> 
-                           <img
-                width="288px"
-                srcset="./images/cashlesspayment-1x.jpg 1x,
+             <img class="portfolio-img" srcset="./images/cashlesspayment-1x.jpg 1x,
                         ./images/cashlesspayment.jpg 2x"
                 src="./images/cashlesspayment.jpg"
                 alt="Cashless Payment"
@@ -490,9 +471,7 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img
-                width="288px"
-                srcset="./images/meditationapp-1x.jpg 1x,
+              <img class="portfolio-img" srcset="./images/meditationapp-1x.jpg 1x,
                         ./images/meditationapp.jpg 2x"
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
@@ -517,9 +496,7 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img
-                width="288px"
-                srcset="./images/taxiservice-1x.jpg 1x,
+              <img class="portfolio-img" srcset="./images/taxiservice-1x.jpg 1x,
                         ./images/taxiservice.jpg 2x"
                 src="./images/taxiservice.jpg"
                 alt="Taxi Service"
@@ -544,9 +521,7 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img
-                width="288px"
-                srcset="./images/screenillustrations-1x.jpg 1x,
+              <img class="portfolio-img" srcset="./images/screenillustrations-1x.jpg 1x,
                         ./images/screenillustrations.jpg 2x"
                 src="./images/screenillustrations.jpg"
                 alt="Screen Illustrations"
@@ -571,9 +546,7 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img
-                width="288px"
-                srcset="./images/onlinecourses-1x.jpg 1x,
+              <img class="portfolio-img" srcset="./images/onlinecourses-1x.jpg 1x,
                         ./images/onlinecourses.jpg 2x"
                 src="./images/onlinecourses.jpg"
                 alt="Online Courses"
