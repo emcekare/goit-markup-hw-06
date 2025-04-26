@@ -2,9 +2,6 @@
   /* Styles for tablet devices */
 
   /* ---------------- HEADER ---------------- */
-  body {
-    max-width: 768px;
-  }
 
   .burger-button {
     display: none;
@@ -85,7 +82,6 @@
     gap: 36px;
     width: 100%;
     height: 436px;
-    background-size: cover;
   }
 
   .slider-text {
@@ -101,7 +97,7 @@
 
   .first-paragraph .container {
     padding-bottom: 96px;
-    width: 736px;
+    max-width: 736px;
   }
 
   .first-paragraph-list-item {
@@ -125,9 +121,17 @@
     gap: 64px 24px;
   }
 
+  .team-area .container {
+    max-width: 768px;
+  }
+
   /* ----------------- TEAM AREA BITTI -----------------*/
 
   /* ----------------- PORTFOLIO AREA ----------------- */
+
+  .portfolio-area .container {
+    max-width: 768px;
+  }
 
   .portfolio-list {
     width: 356px;
@@ -143,10 +147,10 @@
   /* ----------------- PORTFOLIO AREA BITTI -----------------*/
 
   /* ----------------- FOOTER AREA ----------------- */
+
   .footer-main-container {
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 496px;
+    justify-content: center;
+    max-width: 768px;
     gap: 72px 24px;
   }
 

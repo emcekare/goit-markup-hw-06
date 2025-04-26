@@ -5,11 +5,6 @@
   body {
     max-width: 1440px;
   }
-
-  .container {
-    width: 1158px;
-  }
-
   .page-start .container {
     width: 1128px;
     padding: 0;
@@ -64,6 +59,7 @@
 
   .first-paragraph .container {
     width: 1128px;
+    max-width: 1128px;
   }
 
   .first-paragraph-list-item {
@@ -89,7 +85,20 @@
 
   /* ----------------- ABOUT AREA END -----------------*/
 
+  /* ----------------- TEAM AREA ----------------- */
+
+  .team-area .container {
+    max-width: 1128px;
+  }
+
+  /* ----------------- TEAM AREA BITTI -----------------*/
+
   /* -------------- PORTFOLIO AREA ----------------- */
+
+  .portfolio-area .container {
+    max-width: 1158px;
+  }
+
   .portfolio-list {
     width: 360px;
     height: 420px;
@@ -109,6 +118,7 @@
   .footer-main-container {
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1158px;
     width: 1128px;
     gap: 0;
   }
