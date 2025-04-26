@@ -1,0 +1,117 @@
+@media screen and (min-width: 1158px) {
+  /* Styles for desktop devices */
+
+  /* ---------------- HEADER ---------------- */
+  body {
+    max-width: 1440px;
+  }
+
+  .container {
+    width: 1158px;
+  }
+
+  .page-start .container {
+    width: 1128px;
+    padding: 0;
+  }
+
+  .header-nav {
+    padding-left: 24px;
+  }
+
+  .head-menu {
+    padding-left: 0px;
+  }
+
+  .hidden-header-nav {
+    display: flex;
+    visibility: hidden;
+  }
+
+  .head-address {
+    padding-left: 0;
+    display: flex;
+    flex-direction: flex-end;
+  }
+
+  .head-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  .contact-list > a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------------- HEADER END ---------------- */
+
+  /* ---------------- SLIDER AREA ---------------- */
+
+  .slider-area {
+    gap: 48px;
+    max-width: 1440px;
+    height: 600px;
+  }
+
+  /* ---------------- SLIDER AREA END ---------------- */
+
+  /* ----------------- ABOUT AREA ----------------- */
+
+  .first-paragraph .container {
+    width: 1128px;
+  }
+
+  .first-paragraph-list-item {
+    width: 264px;
+  }
+
+  .first-paragraph-list {
+    gap: 8px 24px;
+  }
+
+  .first-h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .first-paragraph-text {
+    font-weight: 400;
+  }
+
+  .first-paragraph-list .icon-container {
+    display: flex;
+  }
+
+  /* ----------------- ABOUT AREA END -----------------*/
+
+  /* -------------- PORTFOLIO AREA ----------------- */
+  .portfolio-list {
+    width: 360px;
+    height: 420px;
+    box-shadow: 0 0 0 0;
+  }
+  .portfolio-img {
+    width: 360px;
+  }
+
+  .portfolio-area-list {
+    gap: 48px 24px;
+  }
+
+  /* ----------------- PORTFOLIO AREA END -----------------*/
+
+  /* ----------------- FOOTER AREA ----------------- */
+  .footer-main-container {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1128px;
+    gap: 0;
+  }
+
+  /* ------------- FOOTER AREA END ----------------- */
+}

@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
 
 <script src="./modal.js" defer></script>
 
@@ -116,14 +117,14 @@
 
 <!------------ NAVBAR MOBİL MENÜ İCON ------------->
 
-<div class="burger-menu">
+<div>
   <button id="hamburger-menu-open-button" type="button" class="burger-button" width="16" height="18">
     <svg width="18" height="16" class="burger-icon">
       <use href="./images/icons.svg#icon-hamburger"></use>
     </svg>
   </button>
-
 </div>
+
       </div>
 
 <!------------ NAVBAR MOBİL MENÜ İCON   ------------->
@@ -136,14 +137,11 @@
     <main>
       <!--- BAŞLIK BURADA -->
       <section class="slider-area">
-        <div class="container">
-          <h1 class="slider-text">
-            Effective Solutions <br />
-            for Your Business
-          </h1>
+        
+          <h1 class="slider-text">Effective Solutions for Your Business</h1>
           <button id="modal-open-button" type="button" class="slider-button">
             Order Service
-          </button>
+         
         </div>
       </section>
 
@@ -161,8 +159,7 @@
              </div>
 
               <h3 class="first-h3">Strategy</h3>
-              <p class="first-paragraph-text">
-                Our goal is to identify the business problem to walk away with the perfect and creative solution.
+              <p class="first-paragraph-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.
               </p>
             </li>
 
@@ -174,8 +171,7 @@
 </div>
 
               <h3 class="first-h3">Punctuality</h3>
-              <p class="first-paragraph-text">
-               Bring the key message to thebrand's audience for the best price within the shortest possible time.
+              <p class="first-paragraph-text">Bring the key message to the brand's audience for the best price within the shortest possible time.
               </p>
             </li>
 
@@ -186,8 +182,7 @@
           </svg>
 </div>
               <h3 class="first-h3">Diligence</h3>
-              <p class="first-paragraph-text">
-                Research and confirm brands with the strongest digital growthopportunities and minimize risk.
+              <p class="first-paragraph-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk.
               </p>
             </li>
 
@@ -198,8 +193,7 @@
           </svg>
        </div>
               <h3 class="first-h3">Technologies</h3>
-              <p class="first-paragraph-text">
-                Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+              <p class="first-paragraph-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -213,11 +207,13 @@
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="team-area-list">
+
+      <!------------------ MARK GUERRERO'S CARD ------------------------>      
             <li class="team-list">
               <img
                 width="264px"
-                srcset="./images/markguerrero-1x.jpg 1x,
-                        ./images/markguerrero.jpg 2x"
+                srcset="./images/markguerrero-1x.jpg 2x,
+                        ./images/markguerrero.jpg 1x"
                 src="./images/markguerrero.jpg"
                 alt="Product Designer"
               />
@@ -262,11 +258,14 @@
 </li>
 </ul>
             </li>
+
+
+        <!------------------ TOM FORD'S CARD ------------------------>
             <li class="team-list">
               <img
                 width="264px"
-                srcset="./images/tomford-1x.jpg 1x,
-                        ./images/tomford.jpg 2x"
+                srcset="./images/tomford-1x.jpg 2x,
+                        ./images/tomford.jpg 1x"
                 src="./images/tomford.jpg"
                 alt="Frontend Developer"
               />
@@ -310,11 +309,16 @@
 </li>
 </ul>
             </li>
+
+
+
+
+        <!------------------ CAMILA GARCIA'S CARD ------------------------>
             <li class="team-list">
               <img
                 width="264px"
-                srcset="./images/camilegarcia-1x.jpg 1x,
-                        ./images/camilegarcia.jpg 2x"
+                srcset="./images/camilegarcia-1x.jpg 2x,
+                        ./images/camilegarcia.jpg 1x"
                 src="./images/camilegarcia.jpg"
                 alt="Marketing"
               />
@@ -358,11 +362,15 @@
 </li>
 </ul>
             </li>
+
+
+
+        <!------------------ DANIEL WILSON'S CARD ------------------------>
             <li class="team-list">
               <img
                 width="264px"
-                srcset="./images/danielwilson-1x.jpg 1x,
-                        ./images/danielwilson.jpg 2x"
+                srcset="./images/danielwilson-1x.jpg 2x,
+                        ./images/danielwilson.jpg 1x"
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson - UI Designer"
               />
@@ -423,8 +431,9 @@
 
             <li class="portfolio-list">
                <div class="hidden-image">
-              <img class="portfolio-img" srcset="./images/bankingapp-1x.jpg 1x,
-                        ./images/bankingapp.jpg 2x"
+              <img class="portfolio-img" 
+              srcset="./images/bankingapp-1x.jpg 2x,
+                        ./images/bankingapp.jpg 1x"
                 src="./images/bankingapp.jpg"
                 alt="Banking App"
               />
@@ -447,8 +456,9 @@
             </li>
             <li class="portfolio-list">
               <div class="hidden-image"> 
-             <img class="portfolio-img" srcset="./images/cashlesspayment-1x.jpg 1x,
-                        ./images/cashlesspayment.jpg 2x"
+             <img class="portfolio-img" 
+             srcset="./images/cashlesspayment-1x.jpg 2x,
+                        ./images/cashlesspayment.jpg 1x"
                 src="./images/cashlesspayment.jpg"
                 alt="Cashless Payment"
                               />
@@ -471,8 +481,9 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img class="portfolio-img" srcset="./images/meditationapp-1x.jpg 1x,
-                        ./images/meditationapp.jpg 2x"
+              <img class="portfolio-img" 
+              srcset="./images/meditationapp-1x.jpg 2x,
+                        ./images/meditationapp.jpg 1x"
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
               />
@@ -496,8 +507,9 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img class="portfolio-img" srcset="./images/taxiservice-1x.jpg 1x,
-                        ./images/taxiservice.jpg 2x"
+              <img class="portfolio-img" 
+              srcset="./images/taxiservice-1x.jpg 2x,
+                        ./images/taxiservice.jpg 1x"
                 src="./images/taxiservice.jpg"
                 alt="Taxi Service"
               />
@@ -521,8 +533,9 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img class="portfolio-img" srcset="./images/screenillustrations-1x.jpg 1x,
-                        ./images/screenillustrations.jpg 2x"
+              <img class="portfolio-img" 
+              srcset="./images/screenillustrations-1x.jpg 2x,
+                        ./images/screenillustrations.jpg 1x"
                 src="./images/screenillustrations.jpg"
                 alt="Screen Illustrations"
               />
@@ -546,8 +559,9 @@
 
             <li class="portfolio-list">
               <div class="hidden-image">
-              <img class="portfolio-img" srcset="./images/onlinecourses-1x.jpg 1x,
-                        ./images/onlinecourses.jpg 2x"
+              <img class="portfolio-img" 
+              srcset="./images/onlinecourses-1x.jpg 2x,
+                        ./images/onlinecourses.jpg 1x"
                 src="./images/onlinecourses.jpg"
                 alt="Online Courses"
               />

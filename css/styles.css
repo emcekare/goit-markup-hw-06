@@ -1,6 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
 }
 
 ::after,
@@ -10,6 +14,7 @@ body {
 
 img {
   display: block;
+  margin: 0 auto;
 }
 
 h1,
@@ -42,24 +47,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  max-width: 1158px;
 }
-
-/*navbar button */
-
-.burger-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.burger-menu {
-  position: relative;
-  margin: 0 auto;
-  text-align: right;
-  right: -65px;
-}
-
 
 /* ----------------- HAMBURGER MENU ----------------- */
 
@@ -100,7 +88,7 @@ ul {
   bottom: 0;
   left: 0;
   background-color: white;
-  z-index: 999;
+  z-index: 998;
 }
 
 .-is-open {
@@ -211,14 +199,27 @@ ul {
 
 .page-start {
   background-color: #fff;
-  z-index: 999;
+  display: flex;
 }
 
 .page-start .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #e7e9fc;
   height: 56px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 19px;
+}
+
+/*navbar button */
+
+.burger-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .header-logo {
@@ -230,6 +231,7 @@ ul {
   text-transform: uppercase;
   color: #4d5ae5;
   text-align: left;
+  cursor: pointer;
 }
 
 .logo-studio {
@@ -249,6 +251,10 @@ ul {
   gap: 40px;
 }
 
+.head-menu-list {
+  display: none;
+}
+
 .head-menu-list > a {
   font-weight: 500;
   font-size: 16px;
@@ -257,9 +263,8 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-
-
 
 .head-menu-list > a:hover,
 .head-menu-list > a:focus {
@@ -270,20 +275,18 @@ ul {
   color: #404bbf;
 }
 
-
 .head-address {
   display: none;
 }
 
 .head-contact {
-  font-style: normal;
-  display: none;
   display: flex;
   justify-content: flex-end;
   gap: 40px;
 }
 
 .contact-list {
+  display: flex;
   font-style: normal;
   text-decoration: none;
 }
@@ -295,6 +298,7 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .contact-list > a:hover {
@@ -304,9 +308,16 @@ ul {
 /*---------------- Header Bitti -----------------------*/
 
 /*----------------- Slider Area ----------------------*/
+
 .slider-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 72px;
+  align-items: center;
+  width: 320px;
   height: 432px;
-  margin: 0 auto;
   background: #202020;
   background-image: linear-gradient(
       to bottom,
@@ -318,8 +329,6 @@ ul {
   background-position: center;
   background-size: cover;
   background-clip: padding-box;
-  justify-content: center;
-  text-align: center;
 }
 
 @media (min-resolution: 2x) {
@@ -333,16 +342,13 @@ ul {
 }
 
 .slider-text {
-  padding-top: 72px;
+  width: 216px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
   color: white;
-  text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .slider-button {
@@ -355,7 +361,6 @@ ul {
   cursor: pointer;
   padding: 16px 32px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  margin-top: 48px;
   border-radius: 4px;
   border: none;
   transition-property: background-color;
@@ -373,15 +378,13 @@ ul {
 .first-paragraph .container {
   padding-top: 96px;
   padding-bottom: 120px;
-  margin: 0 auto;
+  width: 288px;
 }
 
-.first-paragraph-list-item{
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
+.first-paragraph-list-item {
+  width: 288px;
+  min-height: 120px;
 }
-
 
 .first-paragraph-list {
   list-style: none;
@@ -417,7 +420,6 @@ ul {
 
 .first-paragraph-list .icon-container {
   display: none;
-  width: 288px;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -486,17 +488,17 @@ ul {
   padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    
 }
 
 .team-list .icon-container .icon {
   width: 16px;
   height: 16px;
   fill: #f4f4fd;
+  cursor: pointer;
 }
 
 .team-list .icon-container {
-  margin-top: 8px;
+  padding-top: 8px;
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -528,10 +530,6 @@ ul {
 
 /*------------------ PORTFOLIO AREA ------------------*/
 
-
-.portfolio-area {
-}
-
 .portfolio-area .container {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -539,9 +537,7 @@ ul {
 
 .portfolio-img {
   width: 288px;
-  
 }
-
 
 .portfolio-area .title {
   font-weight: 700;
@@ -590,7 +586,7 @@ ul {
 
 .portfolio-list {
   width: 288px;
- background-color: #fff;
+  background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -603,9 +599,6 @@ ul {
   position: relative;
   overflow: hidden;
 }
-
-
-
 
 .portfolio-list:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -649,8 +642,9 @@ ul {
 
 .footer-main-container {
   display: flex;
-flex-wrap: wrap; 
- text-align: center;
+  flex-wrap: wrap;
+  gap: 72px;
+  text-align: center;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -673,6 +667,7 @@ flex-wrap: wrap;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  cursor: pointer;
 }
 
 .footer-logo-container {
@@ -686,7 +681,6 @@ flex-wrap: wrap;
 
 .footer-title {
   text-align: center;
-  padding-top: 72px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -700,6 +694,7 @@ flex-wrap: wrap;
   width: 24px;
   height: 24px;
   fill: #f4f4fd;
+  cursor: pointer;
 }
 
 .icon-list-container {
@@ -728,7 +723,6 @@ flex-wrap: wrap;
 
 /*               FOOTER İCON STİLLERİ BİTTİ            */
 
-
 /*               FOOOTER FORM STİLLERİ                */
 
 .footer-form {
@@ -748,6 +742,7 @@ flex-wrap: wrap;
 }
 
 .footer-form-input > button {
+  cursor: pointer;
   border-radius: 4px;
   color: white;
   border: none;
@@ -797,7 +792,7 @@ flex-wrap: wrap;
 
 /* ------------   Footer Bitti -----------------*/
 
-/* MODAL ALANI */
+/* ------------ MODAL ALANI -------------------*/
 
 .backdrop {
   position: fixed;
